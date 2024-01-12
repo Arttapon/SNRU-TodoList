@@ -8,7 +8,7 @@ function TodoApp() {
   const [data, setData] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [trigger, setTrigger] = useState(false);
-  const apiUrl = 'http://localhost:8000/todos';
+  const apiUrl = 'https://todo-list-q5cr.onrender.com/todos';
   
 
   useEffect(() => {
