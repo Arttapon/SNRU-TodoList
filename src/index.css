@@ -1,0 +1,183 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Itim', sans-serif;
+}
+
+body {
+  
+  background-color: #f0f0f0;
+}
+
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.todo-app {
+  width: 600px;
+  margin-top: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+}
+
+.dashboard {
+  background-color: #3498db;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  color: #fff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.form-add-todo {
+  background-color: #f9ca24;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.form-add-todo > input {
+  flex-grow: 1;
+  font-size: 16px;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+input.inputEdit {
+  flex-grow: 1;
+  font-size: 16px;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.form-add-todo > button {
+  padding: 8px 16px;
+  background-color: #2ecc71;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-add-todo > button:hover {
+  background-color: #27ae60;
+}
+
+
+.todo-container {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.todo-item {
+  background-color: #ecf0f1;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.todo-item .edit {
+  flex-grow: 1;
+  background-color: #ecf0f1;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.todo-item p {
+  flex-grow: 1;
+  display: flex;
+  gap: 8px  ;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+
+.todo-item .btn-group a {
+  padding: 6px 12px;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #000000;
+  transition: background-color 0.3s ease;
+}
+
+.todo-item .btn-group{
+  cursor: pointer;
+}
+
+.todo-item .btn-group a:hover {
+  background-color: #ff382e;
+}
+
+.todo-item:hover {
+  background-color: #d5dbdb;
+}
+
+.dashboard button {
+  padding: 8px 16px;
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dashboard button:hover {
+  background-color: #fffc3b;
+}
+
+/* สไตล์ของปุ่มในส่วนของ TodoContainer */
+.todo-container button {
+  padding: 6px 10px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.todo-container button:hover {
+  background-color: #2980b9;
+}
+
+/* การเพิ่มสีและเอฟเฟกต์ให้กับ TodoItem ขณะ hover */
+.todo-item:hover {
+  background-color: #bdc3c7;
+  transform: scale(1.02);
+}
+
+/* การให้สีและเอฟเฟกต์ขณะ hover ในส่วนของ TodoItem ที่เป็นตัวแก้ไข */
+.todo-item .edit:hover {
+  background-color: #bdc3c7;
+  transform: scale(1.02);
+}

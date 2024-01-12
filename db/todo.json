@@ -1,0 +1,34 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "todo": "Do something",
+      "completed": false,
+      "userId": 26
+    },
+    {
+      "id": 2,
+      "todo": "Memorize the fifty states and their capitals",
+      "completed": false,
+      "userId": 48
+    },
+    {
+      "id": 3,
+      "todo": "Watch a classic movie",
+      "completed": false,
+      "userId": 4
+    },
+    {
+      "id": 4,
+      "todo": "Contribute code or a monetary donation",
+      "completed": false,
+      "userId": 48
+    },
+    {
+      "id": 5,
+      "todo": "Solve a Rubik's cube",
+      "completed": false,
+      "userId": 31
+    }
+  ]
+}
